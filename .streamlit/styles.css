@@ -1,0 +1,19 @@
+/* .streamlit/styles.css */
+
+/* Hide the “Made with Streamlit” footer & menu */
+#MainMenu, footer { visibility: hidden; }
+
+/* Style your subheader text */
+.subheader { 
+  font-size: 1.2rem; 
+  color: #333333; 
+  margin-top: -0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Give each expander a subtle box-shadow */
+[data-testid="stExpander"] {
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+}

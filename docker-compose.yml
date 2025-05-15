@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  faq-app:
+    build: .
+    ports:
+      - "8505:8501"       # host 8505 → container 8501
+    volumes:
+      - ./:/app           # so edits to app.py/faq.xlsx show up immediately
+    environment:
+      - STREAMLIT_SERVER_HEADLESS=true
+      - STREAMLIT_SERVER_ENABLECORS=false
+      - STREAMLIT_SERVER_ADDRESS=0.0.0.0
+      - STREAMLIT_SERVER_PORT=8501
